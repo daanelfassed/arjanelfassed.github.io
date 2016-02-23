@@ -3,10 +3,8 @@ var jqueryNoConflict = jQuery;
 // begin main function
 jqueryNoConflict(document).ready(function(){
 
-    initializeTabletopObject('15DSYO2OjLHLRjumZ-9yTX7Z5-TLikZQ-137p788_QAk');
+    initializeTabletopObject('1AdMg3ueZsuYIFtJ9y4JeQlUBgIjKFekYM0An8bUYDxU');
     
-
-
 });
 
 // pull data from google spreadsheet
@@ -28,15 +26,20 @@ function createTableColumns(){
     is what happens with the More Info column header */
 
     var tableColumns =   [
-		{"mDataProp": "afgifte", "sTitle": "datum afgifte", "sClass": "center"},
-		{"mDataProp": "omschrijving", "sTitle": "omschrijving", "sClass": "left"},
-		{"mDataProp": "gebruik", "sTitle": "gebruik", "sClass": "left"},
-		{"mDataProp": "herkomst", "sTitle": "herkomst", "sClass": "left"},
-		{"mDataProp": "eindbestemming", "sTitle": "eindbestemming", "sClass": "left"},
-		{"mDataProp": "waarde", "sTitle": "waarde", "sClass": "right"},
+		{"mDataProp": "datum", "sTitle": "Datum", "sClass": "left"},
+		{"mDataProp": "nummer", "sTitle": "Nummer", "sClass": "left"},
+		{"mDataProp": "omschrijving", "sTitle": "Omschrijving", "sClass": "left"},
+		{"mDataProp": "gebruik", "sTitle": "Gebruik", "sClass": "left"},
+		{"mDataProp": "type", "sTitle": "Type", "sClass": "left"},
+		{"mDataProp": "catdt", "sTitle": "D/T", "sClass": "left"},
+		{"mDataProp": "herkomst", "sTitle": "Herkomst", "sClass": "left"},
+		{"mDataProp": "bestemming", "sTitle": "Eindbestemming", "sClass": "left"},
+		{"mDataProp": "waarde", "sTitle": "Waarde in euros", "sClass": "right"},
 	];
     return tableColumns;
 }
+
+
 
 // create the table container and object
 function writeTableWith(dataSource){
@@ -45,7 +48,7 @@ function writeTableWith(dataSource){
 
     var oTable = jqueryNoConflict("#data-table-container").dataTable({
         "sPaginationType": "bootstrap",
-        "iDisplayLength": 25,
+        "iDisplayLength": 15,
         "aaData": dataSource,
         "aoColumns": createTableColumns(),
         "fnRowCallback": function(nRow, aData, iDisplayIndex) {
