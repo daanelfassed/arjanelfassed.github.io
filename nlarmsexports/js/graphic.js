@@ -42,7 +42,7 @@ $(document).ready(function() {
         $("#mySelection").DataTable({
             "data": data,
             "columns": columns, 
-            "order":[[2, "desc"]], //order on 1st column
+            "order":[[2, "asc"]], //order on 1st column
             "pagingType": "simple" //no page numbers
 			//uncomment these options to simplify your table
 			//"paging": false,
