@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arjan El Fassed - projecten</title>
+		
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="index.html">Home</a></li>
+	        	<li><a href="/">Projecten</a></li>
+	        	<li><a href="contact.html">Contact</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Projecten</h1>
+				<p><ul>
+				<li><a href="/dualuse">Dual use</a></li>
+				</p></ul>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:arjan@openstate.eu">email</a></li>
+        		<li><a href="https://github.com/hankquinlan">github.com/arjanelfassed</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
