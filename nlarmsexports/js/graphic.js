@@ -43,7 +43,7 @@ $(document).ready(function() {
             "data": data,
             "columns": columns, 
             "order":[[ 0, 'desc' ]], //order on 1st column
-            "pagingType": "full_numbers" //page numbers
+            "pagingType": 'full_numbers' //page numbers
 			//uncomment these options to simplify your table
 			//"paging": false,
 			//"searching": false,
