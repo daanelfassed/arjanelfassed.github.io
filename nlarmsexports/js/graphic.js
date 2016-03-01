@@ -40,6 +40,7 @@ $(document).ready(function() {
 
         //initilize the DataTable object and put settings in
         $("#mySelection").DataTable({
+            "responsive": 'true',
             "data": data,
             "columns": columns, 
             "order":[[ 0, 'desc' ]], //order on 1st column
