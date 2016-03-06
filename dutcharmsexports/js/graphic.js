@@ -36,7 +36,7 @@ $(document).ready(function() {
     function writeTable(data){
         //select main div and put a table there
 		//use bootstrap css to customize table style: http://getbootstrap.com/css/#tables 
-        $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered dt-responsive nowrap" id="mySelection"></table><br><img src="https://arjanelfassed.github.io/dutcharmsexports/vergmeldingen.png" class="img-responsive center-block" alt="grafiek">');
+        $('#graphic').html('<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered dt-responsive nowrap" id="mySelection"></table><br><img src="https://arjanelfassed.github.io/dutcharmsexports/vergmeldingen.png" class="img-responsive center-block" alt="grafiek"><br><br><center><a href="http://openstate.eu" target="_blank"><small>Open State Foundation</a></center><br>');
 
         //initilize the DataTable object and put settings in
         $("#mySelection").DataTable({
